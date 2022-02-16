@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Normalize File -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- CSS File -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tip Calculator App Main</title>
+    </head>
+    <body>
+        <div class="head container">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="body">
+            <div class="calc">
+                <div class="bill">
+                    <h3>Bill</h3>
+                    <input type="number" id="bill">
+                </div>
+                <div class="tip">
+                    <h3>Select Tip %</h3>
+                    <div>
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="number" id="custom" placeholder="Custom">    
+                    </div>
+                </div>
+                <div class="people">
+                    <h3>Number of People</h3>
+                    <input type="number" id="people">
+                </div>
+            </div>
+            <div class="result">
+                <div>
+                    <div class="tip-amount">
+                        <div class="words">
+                            <h3>Tip Amount</h3>
+                            <p>/ Person</p>
+                        </div>
+                        <div class="numbers" id="tip-number">
+                            <h1>$0.00</h1>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="words">
+                            <h3>Total</h3>
+                            <p>/ Person</p>
+                        </div>
+                        <div class="numbers" id="total-number">
+                            <h1>$0.00</h1>
+                        </div>
+                    </div>
+                </div>
+                <input type="reset" value="RESET" id="reset">
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
